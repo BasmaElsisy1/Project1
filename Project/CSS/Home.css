@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url(main.css);
+@import url(footer.css);
+@import url(background.css);
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+li,
+a,
+button {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: rgb(11, 78, 99);
+}
+
+.navlinks {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 2px;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(19, 127, 160);
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    header {
+        padding: 30px 10%;
+    }
+
+    img {
+        width: 80px;
+        height: 75px;
+    }
+
+    li,
+    a,
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 901px) {
+    img {
+        width: 100px;
+        height: 95px;
+    }
+
+    li,
+    a,
+    button {
+        font-size: 20px;
+    }
+
+    main {
+        margin-top: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a b c"
+            "a b c"
+            "a b c";
+    }
+
+    .first {
+        margin: 1 5px;
+    }
+
+    img {
+        width: 200px;
+        height: 220px;
+    }
+
+    h5 {
+        font-size: 30px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .second {
+        margin: 15px;
+    }
+
+    .third {
+        margin: 15px;
+    }
+}

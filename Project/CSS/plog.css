@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.container {
+    display: grid;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+        "hd"
+        "hd"
+        "main"
+        "main"
+        "ft"
+        "ft";
+}
+
+.box {
+    border: rgb(11, 78, 99) 3px solid;
+}
+
+.header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    padding: none;
+    color: white;
+    background-color: rgb(11, 78, 99);
+}
+
+#home {
+    grid-area: hd;
+    background-color: rgb(11, 78, 99);
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 2px;
+    grid-template-areas: "a"
+                         "a"
+                         "b"
+                         "b"
+                         "c"
+                         "c";
+}
+
+.fisrt {
+    grid-area: a;
+}
+
+.pp {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.fisrt1 {
+    font-style: italic;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.second {
+    grid-area: b;
+    text-align: center;
+    background-color: rgb(11, 78, 99);
+}
+
+img {
+    width: 230px;
+    height: 300px;
+    padding-right: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: none;
+}
+
+q {
+    font-size: 12px;
+    font-style: italic;
+}
+address {
+    font-size: 8px;
+    text-align: right;
+}
+.third {
+    grid-area: c;
+    text-align: center;
+}
+.footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    margin-top: 5px;
+    grid-template-areas: "a b";
+    background-color: rgb(11, 78, 99);
+}
+.left,
+.right {
+    border: 2px solid white;
+}
+.left li {
+    display: list-item;
+    font-size: 15px;
+    padding-top: 0;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+h6 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    position: relative;
+    text-align: center;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    align-items: center;
+}
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        grid-template-areas:
+            "hd hd hd"
+            "main main main"
+            "main main main"
+            "main main main"
+            "ft ft ft";
+    }
+    .header {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .main {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "a b c"
+                                 "a b c"
+                                 "a b c";
+    }
+    .pp {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .fisrt1 {
+        font-size: 17px;
+    }
+    img {
+        width: 270px;
+        height: 300px;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    q {
+        font-size: 14px;
+    }
+    address {
+        font-size: 10px;
+    }
+    .footer {
+        margin-top: 7px;
+    }
+    h6 {
+        font-size: 23px;
+    }
+}
+@media (min-width: 901px) {
+    .header {
+        font-size: 20px;
+    }
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "a b c";
+    }
+    .pp {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .fisrt1 {
+        font-size: 21px;
+    }
+    img {
+        width: 450px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    q {
+        font-size: 16px;
+    }
+    address {
+        font-size: 12px;
+    }
+}
